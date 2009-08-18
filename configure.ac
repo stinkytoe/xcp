@@ -7,6 +7,7 @@ AC_PROG_CXX
 
 
 dnl Checks for libraries.
+AC_CHECK_LIB([popt],[poptGetContext],,echo "popt library not installed!"; exit 1)
 
 dnl Checks for header files.
 
